@@ -24,7 +24,7 @@ class DeclarationsController < ApplicationController
   private
 
     def params_dec
-
+      params.permit(:content)
     end
 
     def set_declaration
