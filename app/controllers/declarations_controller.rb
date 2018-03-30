@@ -14,6 +14,13 @@ class DeclarationsController < ApplicationController
   end
 
   def create
+    @declaration = Phrase.new(params_dec)
+
+    if @declaration.save
+      json_response(@declaration)
+    else
+      json_response(@declaration.errors, :unprocessable_entity)
+    end
   end
 
   def update
