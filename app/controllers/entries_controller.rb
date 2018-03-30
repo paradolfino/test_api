@@ -1,4 +1,5 @@
 class EntriesController < ApplicationController
+  before_action :set_entry, only: [:show, :update, :destroy]
   def index
   end
 
@@ -19,4 +20,6 @@ class EntriesController < ApplicationController
 
   def destroy
   end
+
+
 end
