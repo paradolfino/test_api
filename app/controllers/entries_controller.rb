@@ -21,5 +21,9 @@ class EntriesController < ApplicationController
   def destroy
   end
 
+  private
 
+    def params_entry
+      params.permit(:content)
+    end
 end
