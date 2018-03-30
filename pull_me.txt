@@ -1,1 +1,9 @@
 
+[create basic api structure complete with RESTful JSON actions]
+### 29/03/2018[20:20 - 20:39]:
+* create test controllers, models, actions, routes
+* create json_response concern
+* create before_action and private methods for controllers
+* create actions for declarations controller
+* create actions for entries controller
+

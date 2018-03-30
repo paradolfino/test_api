@@ -30,3 +30,5 @@ Things you may want to cover:
 ##### 29/03/2018: 20:27 - 20:31:pool[create before_action and private methods for controllers]
 
 ##### 29/03/2018: 20:32 - 20:36:pool[create actions for declarations controller]
+
+##### 29/03/2018: 20:36 - 20:39:pool[create actions for entries controller]
