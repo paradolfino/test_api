@@ -23,6 +23,10 @@ class DeclarationsController < ApplicationController
 
   private
 
+    def params_dec
+
+    end
+
     def set_declaration
       @declaration = Declaration.find(params[:id])
     end
