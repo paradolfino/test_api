@@ -24,6 +24,11 @@ class DeclarationsController < ApplicationController
   end
 
   def update
+    if @declaration.update(params_dec)
+      json_response(@declaration)
+    else
+      json_response(@declaration.errors, :unprocessable_entity)
+    end
   end
 
   def edit
