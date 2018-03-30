@@ -6,7 +6,7 @@ class DeclarationsController < ApplicationController
   end
 
   def show
-    json_response(@phrase.to_json(:include => :word))
+    json_response(@declaration.to_json(:include => :entries))
   end
 
   def new
