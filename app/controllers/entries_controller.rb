@@ -26,4 +26,8 @@ class EntriesController < ApplicationController
     def params_entry
       params.permit(:content, :declaration_id)
     end
+
+    def set_entry
+      @entry = Entry.find(params[:id])
+    end
 end
