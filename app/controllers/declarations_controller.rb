@@ -1,4 +1,5 @@
 class DeclarationsController < ApplicationController
+  before_action :set_declaration, only: [:show, :update, :destroy]
   def index
   end
 
