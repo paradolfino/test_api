@@ -10,6 +10,7 @@ class DeclarationsController < ApplicationController
   end
 
   def new
+    @declaration = Declaration.new
   end
 
   def create
