@@ -14,7 +14,7 @@ class DeclarationsController < ApplicationController
   end
 
   def create
-    @declaration = Phrase.new(params_dec)
+    @declaration = Declaration.new(params_dec)
 
     if @declaration.save
       json_response(@declaration)
