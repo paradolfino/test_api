@@ -1,6 +1,11 @@
 class DeclarationsController < ApplicationController
   before_action :set_declaration, only: [:show, :update, :destroy]
   def index
+    @declarations = Declaration.all
+    respond_to do |format|
+      format.html { render :index }
+      format.json { json_response(@declarations) }
+    end
   end
 
   def show
