@@ -1,20 +1,20 @@
 class EntriesController < ApplicationController
   before_action :set_entry, only: [:show, :update, :destroy]
   def index
-    @entries = Declaration.all
+    @entries = Entry.all
     json_response(@entries)
   end
 
   def show
-    json_response(@entry.to_json(:include => :entries))
+    json_response(@entry.to_json(:include => :declaration))
   end
 
   def new
-    @entry = Declaration.new
+    @entry = Entry.new
   end
 
   def create
-    @entry = Phrase.new(params_dec)
+    @entry = Entry.new(params_dec)
 
     if @entry.save
       json_response(@entry)
