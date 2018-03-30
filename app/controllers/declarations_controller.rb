@@ -20,4 +20,10 @@ class DeclarationsController < ApplicationController
 
   def destroy
   end
+
+  private
+
+    def set_declaration
+
+    end
 end
