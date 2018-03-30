@@ -24,6 +24,6 @@ class DeclarationsController < ApplicationController
   private
 
     def set_declaration
-
+      @declaration = Declaration.find(params[:id])
     end
 end
