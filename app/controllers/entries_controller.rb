@@ -14,7 +14,7 @@ class EntriesController < ApplicationController
   end
 
   def create
-    @entry = Entry.new(params_dec)
+    @entry = Entry.new(params_entry)
 
     if @entry.save
       json_response(@entry)
